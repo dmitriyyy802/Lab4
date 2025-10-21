@@ -3,8 +3,15 @@
 
 
 function countOccurrences(str, char) {
-  //Ваш код
+    let count=0
+  for(let i=0; i<str.length; i++) {
+      if (str[i]==char) {
+          count=count+1
+      }
+  }
+   return count
 }
+
 
 // Приклади використання:
 console.log(countOccurrences("hello world", 'o')); // Виведе: 2
